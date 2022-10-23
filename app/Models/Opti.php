@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Opti extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'fio',
+        'phone',
+        'city',
+        'review'
+    ];
+
+    const OPTI_TO_EMAIL = 'opti@email.com';
 }
